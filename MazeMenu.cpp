@@ -47,7 +47,9 @@ void MazeMenu::createMaze(string filenameIn) {
             char letter = chuteOrLadder[0];
             int letterDif = letter - 65;
             string temp = chuteOrLadder.substr(1, 1);
-            int number = stoi(temp);
+            stringstream ss(temp);
+            int number;// = stoi(temp);
+            ss >> number;
             nodes[nodesIndex]->attachLadderChuteNode(nodes[(number - 1) * 8 + letterDif]);
         }
         nodesIndex++;
@@ -62,7 +64,9 @@ void MazeMenu::setLink(string link, int index, int direction) {
         char letter = link[0];
         int letterDif = letter - 65;
         string temp = link.substr(1, 1);
-        int number = stoi(temp);
+        stringstream ss(temp);
+        int number;// = stoi(temp);
+        ss >> number;
         nodes[index]->attachNewNode(nodes[(number - 1) * 8 + letterDif], direction);
     }
 }
@@ -198,7 +202,9 @@ int MazeMenu::getIndex(string roomName) {
     char letter = roomName[0];
     int letterDif = letter - 65;
     string temp = roomName.substr(1, 1);
-    int number = stoi(temp);
+    stringstream ss(temp);
+    int number;// = stoi(temp);
+    ss >> number;
     return (number - 1) * 8 + letterDif;
 }
 

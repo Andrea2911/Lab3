@@ -12,6 +12,7 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
+using namespace std;
 
 typedef Node* NodePtr;
 

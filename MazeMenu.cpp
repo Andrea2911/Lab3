@@ -209,15 +209,21 @@ int MazeMenu::getIndex(string roomName) {
 }
 
 void MazeMenu::passMessage() {
+    ostringstream sstream;
+    sstream << numberMoves;
+    string moves = sstream.str();
     cout << "Congratulations! You have reached the finish point." << endl
-         << "You took " + to_string(numberMoves) + " steps." << endl
+         << "You took " + moves + " steps." << endl
          << "The nodes you visited are:" + steps << endl;
 
 }
 
 void MazeMenu::failMessage() {
+    ostringstream sstream;
+    sstream << numberMoves;
+    string moves = sstream.str();
     cout << "Congratulations! You have FAILED to reach the finish point." << endl
-         << "You took " + to_string(numberMoves) + " steps." << endl
+         << "You took " + moves + " steps." << endl
          << "The nodes you visited are:" + steps << endl;
 }
 

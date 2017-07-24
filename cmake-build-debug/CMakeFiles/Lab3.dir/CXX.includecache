@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Andrea/CLionProjects/Lab3/MazeMenu.cpp
+MazeMenu.h
+/Users/Andrea/CLionProjects/Lab3/MazeMenu.h
+
+/Users/Andrea/CLionProjects/Lab3/MazeMenu.h
+Node.h
+/Users/Andrea/CLionProjects/Lab3/Node.h
+set
+-
+iostream
+-
+string
+-
+fstream
+-
+sstream
+-
+vector
+-
+
+/Users/Andrea/CLionProjects/Lab3/Node.cpp
+Node.h
+/Users/Andrea/CLionProjects/Lab3/Node.h
+
+/Users/Andrea/CLionProjects/Lab3/Node.h
+string
+-
+
+/Users/Andrea/CLionProjects/Lab3/aew0056_3.cpp
+MazeMenu.h
+/Users/Andrea/CLionProjects/Lab3/MazeMenu.h
+

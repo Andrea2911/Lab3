@@ -1,6 +1,6 @@
-//
-// Created by Andrea Walker on 7/23/17.
-//
+// Lab 3:       The Ladder and Chute Maze Game
+// File:        MazeMenu.h
+// Description: Class definition of the MazeMenu class.
 
 #ifndef MAZEMENU_H
 #define MAZEMENU_H
@@ -14,13 +14,18 @@
 #include <vector>
 using namespace std;
 
-typedef Node* NodePtr;
+typedef Node* NodePtr; //represents a pointer to a Node object
 
+
+// Class: MazeMenu
+// Description: This class creates a MazeMenu object which represents
+//              the interface for the Ladder and Chute Maze Game.  This class
+//              handles the user's inputs and traversal of the maze.
 class MazeMenu {
 public:
-    MazeMenu() {steps = ""; numberMoves = 0;};
+    MazeMenu();
     void welcomeUser();
-    void createMaze(string filenameIn);
+    void createMaze(ifstream& inStream);
     void setLink(string link, int index, int direction);
     bool traverseMaze();
     string chuteOrLadder(string text);

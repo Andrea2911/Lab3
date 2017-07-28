@@ -9,8 +9,8 @@
 MazeMenu::MazeMenu() {
     steps = "";
     numberMoves = 0;
-    start = "A1";
-    end = "H6";
+    //start = "A1";
+    //end = "H6";
 }
 
 // Function:    welcomeUser
@@ -81,6 +81,8 @@ void MazeMenu::createMaze(ifstream& inStream) {
         }
         nodesIndex++; //move on to the next Node
     }
+    start = nodes[getIndex("A1")];
+    finish = nodes[getIndex("H6")];
     inStream.close();
 }
 
@@ -110,11 +112,11 @@ void MazeMenu::setLink(string link, int index, int direction) {
 //              successfully traverses the maze.
 bool MazeMenu::traverseMaze() {
     cout << "You can give up at any time be entering 'q' instead of a direction." << endl << endl;
-    int startIndex = getIndex(start); //find the index in nodes of the start Node
+    //int startIndex = getIndex(start->getNodeName()); //find the index in nodes of the start Node
     string message;
-    currentNode = nodes[startIndex]; //pointer to the user's current position, beginning at start
+    currentNode = start; //pointer to the user's current position, beginning at start
     steps += " " + currentNode->getNodeName(); //add to the steps the user has taken
-    while (currentNode->getNodeName() != end) {
+    while (currentNode->getNodeName() != finish->getNodeName()) {
         message = "You are currently in Room " + currentNode->getNodeName() + " of the Ladder and Chute Maze, ";
         //moves the user if there is a chute/ladder in the new position
         if (currentNode->getLadderChuteNode() != NULL) {

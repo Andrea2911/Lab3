@@ -38,8 +38,10 @@ private:
     NodePtr currentNode;
     string steps;
     int numberMoves;
-    string start;
-    string end;
+    //string start;
+    //string end;
+    NodePtr start;
+    NodePtr finish;
 };
 
 

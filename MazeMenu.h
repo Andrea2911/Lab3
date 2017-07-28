@@ -35,7 +35,7 @@ public:
     void failMessage();
 private:
     NodePtr nodes[48];
-    NodePtr position;
+    NodePtr currentNode;
     string steps;
     int numberMoves;
     string start;

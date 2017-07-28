@@ -1,5 +1,10 @@
+//Lab 3:	The Ladder and Chute Maze Game
+//File:		aew0056_3p.txt
+//Description:	Sample execution and results of testing
+//Name:		Andrea Walker (aew0056@auburn.edu)
+
 Sample output for Maze1.txt:
-aew0056@tux060:~/Lab3$ ./a.out 
+aew0056@tux060:~/Lab3$ ./aew0056_3.out 
 ===========================================================
 |           Welcome to the Ladder and Chute Maze           |
 ===========================================================
@@ -38,7 +43,7 @@ The nodes you visited are: A1 B1 B2 C2 C3 D3 D4 E4 F4 G4 G5 H5 H6
 
 
 Sample output for Maze2.txt:
-aew0056@tux060:~/Lab3$ ./a.out 
+aew0056@tux060:~/Lab3$ ./aew0056_3.out 
 ===========================================================
 |           Welcome to the Ladder and Chute Maze           |
 ===========================================================
@@ -75,3 +80,171 @@ The nodes you visited are: A1 A2 B5 C5 C6 D6 E6 G4 H4 H5 G5 G6 H6
 
 Sample output for Maze3.txt
 
+
+
+Output from running the unit tests in UnitTests.cpp:
+To compile:
+g++ UnitTests.cpp MazeMenu.cpp Node.cpp -o testing.out
+To run:
+./testing.out
+
+aew0056@tux058:~/Lab3$ ./testing.out 
+Testing the Node class:
+Testing Node::setNodeName and Node::getNodeName
+Test setNodeName and getNodeName passed
+Testing attachNewNode
+Test of attachNewNode passed
+Testing getAttachedNode
+Test of getAttachedNode passed.
+Testing attachLadderChuteNode
+Test of attachLadderChuteNode passed
+Testing getLadderChuteNode
+Test of getLadderChuteNode passed
+The tests for the MazeMenu class require user input to work correctly.
+Do you wish to continue? (y/n): 
+y
+This test tests the welcomeUser, createMaze, and setLink methods of the MazeMenu class.  It passes if the user correctly enters a filename and the maze is successfully created.  If an incorrect filename is entered, the user is prompted to try again.
+===========================================================
+|           Welcome to the Ladder and Chute Maze           |
+===========================================================
+
+Enter a filename with a maze: Maze1.txt
+
+Maze created.
+This test tests the traverseMaze, chuteOrLadder, roomChoices, and getIndex methodsof the Mazemenu class. This test passes if the maze is failed to be completed
+You can give up at any time be entering 'q' instead of a direction.
+
+You are currently in Room A1 of the Ladder and Chute Maze, you can go East.  What is your choice? E
+
+You are currently in Room B1 of the Ladder and Chute Maze, you can go North.  What is your choice? N
+
+You are currently in Room B2 of the Ladder and Chute Maze, you can go East or South or West.  What is your choice? q
+
+This test tests the traverseMaze, chuteOrLadder, roomChoices, and getIndex methodsof the Mazemenu class. This test passes if the maze is successfully completed
+You can give up at any time be entering 'q' instead of a direction.
+
+You are currently in Room A1 of the Ladder and Chute Maze, you can go East.  What is your choice? E
+
+You are currently in Room B1 of the Ladder and Chute Maze, you can go North.  What is your choice? N
+
+You are currently in Room B2 of the Ladder and Chute Maze, you can go East or South or West.  What is your choice? E
+
+You are currently in Room C2 of the Ladder and Chute Maze, you can go North or South or West.  What is your choice? N
+
+You are currently in Room C3 of the Ladder and Chute Maze, you can go East or South or West.  What is your choice? E
+
+You are currently in Room D3 of the Ladder and Chute Maze, you can go North or South or West.  What is your choice? N
+
+You are currently in Room D4 of the Ladder and Chute Maze, you can go North or East or South or West.  What is your choice? E
+
+You are currently in Room E4 of the Ladder and Chute Maze, you can go East or West.  What is your choice? E
+
+You are currently in Room F4 of the Ladder and Chute Maze, you can go East or South or West.  What is your choice? E
+
+You are currently in Room G4 of the Ladder and Chute Maze, you can go North or South or West.  What is your choice? N
+
+You are currently in Room G5 of the Ladder and Chute Maze, you can go East or South.  What is your choice? E
+
+You are currently in Room H5 of the Ladder and Chute Maze, you can go North or West.  What is your choice? N
+
+This test tests the passMessage method of the MazeMenu class.  This test passes ifa congratulatory message, number and list of steps taken are displayed correctly
+Congratulations! You have reached the finish point.
+You took 14 steps.
+The nodes you visited are: A1 B1 B2 A1 B1 B2 C2 C3 D3 D4 E4 F4 G4 G5 H5 H6
+
+****Operations as described, test passed.
+
+This test tests the passMessage method of the MazeMenu class.  This test passes ifa failing message, number and list of steps taken are displayed correctly
+Congratulations! You have FAILED to reach the finish point.
+You took 14 steps.
+The nodes you visited are: A1 B1 B2 A1 B1 B2 C2 C3 D3 D4 E4 F4 G4 G5 H5 H6
+
+****Operations as described, test passed.
+
+
+Test cases for the system at large:
+
+1)The user begins the maze, the selects any of the available options (N, S, E, W) in an attempt to traverse the maze.  After any number of tries, if the maze has not been successfully completed, the user selects ‘Q’ to quit the maze.  The user is shown a list and the number of steps they took.
+
+aew0056@tux058:~/Lab3$ ./aew0056_3.out
+===========================================================
+|           Welcome to the Ladder and Chute Maze           |
+===========================================================
+
+Enter a filename with a maze: Maze3.txt
+
+Maze created.
+You can give up at any time be entering 'q' instead of a direction.
+
+You are currently in Room A1 of the Ladder and Chute Maze, and you have taken a
+ladder to Room D1, you can go West.  What is your choice? W
+
+You are currently in Room C1 of the Ladder and Chute Maze, you can go North or East or West.  What is your choice? E
+
+You are currently in Room D1 of the Ladder and Chute Maze, you can go West.  What is your choice? W
+
+You are currently in Room C1 of the Ladder and Chute Maze, you can go North or East or West.  What is your choice? N
+
+You are currently in Room C2 of the Ladder and Chute Maze, you can go North or South or West.  What is your choice? W
+
+You are currently in Room B2 of the Ladder and Chute Maze, and you have taken a
+ladder to Room B6, you can go South.  What is your choice? S
+
+You are currently in Room B5 of the Ladder and Chute Maze, you can go North or East or South or West.  What is your choice? E
+
+You are currently in Room C5 of the Ladder and Chute Maze, you can go North or West.  What is your choice? N
+
+You are currently in Room C6 of the Ladder and Chute Maze, you can go East or South.  What is your choice? E
+
+You are currently in Room D6 of the Ladder and Chute Maze, you can go West.  What is your choice? W
+
+You are currently in Room C6 of the Ladder and Chute Maze, you can go East or South.  What is your choice? S
+
+You are currently in Room C5 of the Ladder and Chute Maze, you can go North or West.  What is your choice? W
+
+You are currently in Room B5 of the Ladder and Chute Maze, you can go North or East or South or West.  What is your choice? S
+
+You are currently in Room B4 of the Ladder and Chute Maze, you can go North or West.  What is your choice? W
+
+You are currently in Room A4 of the Ladder and Chute Maze, you can go East or South.  What is your choice? S
+
+You are currently in Room A3 of the Ladder and Chute Maze, you can go North or East.  What is your choice? E
+
+You are currently in Room B3 of the Ladder and Chute Maze, and you have taken a
+chute to Room A2, you can go South.  What is your choice? S
+
+You are currently in Room A1 of the Ladder and Chute Maze, and you have taken a
+ladder to Room D1, you can go West.  What is your choice? q
+
+Congratulations! You have FAILED to reach the finish point.
+You took 17 steps.
+The nodes you visited are: A1 D1 C1 D1 C1 C2 B2 B6 B5 C5 C6 D6 C6 C5 B5 B4 A4 A3 B3 A2 A1 D1
+2)The user begins the maze, the selects any of the available options (N, S, E, W) in an attempt to traverse the maze.  When the user reaches the end of the maze, the user is shown a list and the number of steps they took to successfully complete the maze.
+
+***Successful traversals can be seen near the top of this file in the sample output section.
+3)The user enters the maze, and selects a direction that is not available, or gives input that does not exist.  The user is told that they have given invalid input and asked to try again.
+
+aew0056@tux058:~/Lab3$ ./aew0056_3.o 
+===========================================================
+|           Welcome to the Ladder and Chute Maze           |
+===========================================================
+
+Enter a filename with a maze: Maze2.txt
+
+Maze created.
+You can give up at any time be entering 'q' instead of a direction.
+
+You are currently in Room A1 of the Ladder and Chute Maze, you can go North.  What is your choice? a
+
+Invalid input! Please try again.
+You are currently in Room A1 of the Ladder and Chute Maze, you can go North.  What is your choice? e
+
+Invalid input! Please try again.
+You are currently in Room A1 of the Ladder and Chute Maze, you can go North.  What is your choice? N
+
+You are currently in Room A2 of the Ladder and Chute Maze, and you have taken a
+ladder to Room B5, you can go East or South.  What is your choice? q
+
+Congratulations! You have FAILED to reach the finish point.
+You took 1 steps.
+The nodes you visited are: A1 A2 B5

@@ -112,12 +112,12 @@ bool MazeMenu::traverseMaze() {
     cout << "You can give up at any time be entering 'q' instead of a direction." << endl << endl;
     int startIndex = getIndex(start); //find the index in nodes of the start Node
     string message;
-    position = nodes[startIndex]; //pointer to the user's current position, beginning at start
-    steps += " " + position->getNodeName(); //add to the steps the user has taken
-    while (position->getNodeName() != end) {
-        message = "You are currently in Room " + position->getNodeName() + " of the Ladder and Chute Maze, ";
+    currentNode = nodes[startIndex]; //pointer to the user's current position, beginning at start
+    steps += " " + currentNode->getNodeName(); //add to the steps the user has taken
+    while (currentNode->getNodeName() != end) {
+        message = "You are currently in Room " + currentNode->getNodeName() + " of the Ladder and Chute Maze, ";
         //moves the user if there is a chute/ladder in the new position
-        if (position->getLadderChuteNode() != NULL) {
+        if (currentNode->getLadderChuteNode() != NULL) {
             message = chuteOrLadder(message);
         }
         else {
@@ -129,17 +129,17 @@ bool MazeMenu::traverseMaze() {
         cin >> choice;//read the user's choice
         cout << endl;
         //check which direction the user chose
-        if (choice == 'N' && position->getAttachedNode(0) != NULL) {
-            position = position->getAttachedNode(0);
+        if (choice == 'N' && currentNode->getAttachedNode(0) != NULL) {
+            currentNode = currentNode->getAttachedNode(0);
         }
-        else if (choice == 'E' && position->getAttachedNode(1) != NULL) {
-            position = position->getAttachedNode(1);
+        else if (choice == 'E' && currentNode->getAttachedNode(1) != NULL) {
+            currentNode = currentNode->getAttachedNode(1);
         }
-        else if (choice == 'S' && position->getAttachedNode(2) != NULL) {
-            position = position->getAttachedNode(2);
+        else if (choice == 'S' && currentNode->getAttachedNode(2) != NULL) {
+            currentNode = currentNode->getAttachedNode(2);
         }
-        else if (choice == 'W' && position->getAttachedNode(3) != NULL) {
-            position = position->getAttachedNode(3);
+        else if (choice == 'W' && currentNode->getAttachedNode(3) != NULL) {
+            currentNode = currentNode->getAttachedNode(3);
         }
         //allows the user to quit
         else if (choice == 'Q' || choice == 'q') {
@@ -150,7 +150,7 @@ bool MazeMenu::traverseMaze() {
             continue;
         }
         numberMoves += 1; //increment number of moves
-        steps += " " + position->getNodeName();
+        steps += " " + currentNode->getNodeName();
     }
     return true;
 }
@@ -163,11 +163,11 @@ string MazeMenu::roomChoices(string text) {
     text += "you can go ";
     bool previous = false;
     //find the avaiable directions
-    if (position->getAttachedNode(0) != NULL) {
+    if (currentNode->getAttachedNode(0) != NULL) {
         text += "North";
         previous = true;
     }
-    if (position->getAttachedNode(1) != NULL) {
+    if (currentNode->getAttachedNode(1) != NULL) {
         if (previous) {
             text += " or East";
             previous = true;
@@ -177,7 +177,7 @@ string MazeMenu::roomChoices(string text) {
             previous = true;
         }
     }
-    if (position->getAttachedNode(2) != NULL) {
+    if (currentNode->getAttachedNode(2) != NULL) {
         if (previous) {
             text += " or South";
             previous = true;
@@ -187,7 +187,7 @@ string MazeMenu::roomChoices(string text) {
             previous = true;
         }
     }
-    if (position->getAttachedNode(3) != NULL) {
+    if (currentNode->getAttachedNode(3) != NULL) {
         if (previous) {
             text += " or West";
         } else {
@@ -205,19 +205,19 @@ string MazeMenu::roomChoices(string text) {
 // Description: Moves the user to the node attached to a chute/ladder and determines
 //              which direction a user can go
 string MazeMenu::chuteOrLadder(string text) {
-    if (position->getLadderChuteNode() != NULL) {
-        string name1 = position->getNodeName().substr(1,1);
-        string name2 = position->getLadderChuteNode()->getNodeName().substr(1,1);
+    if (currentNode->getLadderChuteNode() != NULL) {
+        string name1 = currentNode->getNodeName().substr(1,1);
+        string name2 = currentNode->getLadderChuteNode()->getNodeName().substr(1,1);
         int comp = name1.compare(name2); //decides if the user is encountering a chute or ladder
         if (comp > 0) {
-            text += "and you have taken a\nchute to Room " + position->getLadderChuteNode()->getNodeName() + ", ";
+            text += "and you have taken a\nchute to Room " + currentNode->getLadderChuteNode()->getNodeName() + ", ";
         }
         else {
-            text += "and you have taken a\nladder to Room " + position->getLadderChuteNode()->getNodeName() + ", ";
+            text += "and you have taken a\nladder to Room " + currentNode->getLadderChuteNode()->getNodeName() + ", ";
         }
-        position = position->getLadderChuteNode();
+        currentNode = currentNode->getLadderChuteNode();
         text = roomChoices(text); //get the room choices
-        steps += " " + position->getNodeName();
+        steps += " " + currentNode->getNodeName();
     }
     return text;
 }

@@ -15,7 +15,7 @@
 //   Maze1.txt, Maze2.txt, Maze3.txt
 //
 // To compile this program, type:
-// "g++ aew0056_3.cpp MazeMenu.cpp Node.cpp -o aew0056_3.out"
+// "g++ aew0056_3.cpp Node.cpp MazeMenu.cpp -o aew0056_3.out"
 // and hit enter. Once the program compiles, type "./aew0056_3.out" and the program will
 // begin, prompting the user to enter a maze filename.
 //

@@ -38,6 +38,7 @@ void MazeMenu::welcomeUser() {
         }
     }
     createMaze(instream); //creates the graphical representation of the maze
+    cout << "Maze created." << endl;
 }
 
 // Function:    createMaze

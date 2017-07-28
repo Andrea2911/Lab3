@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Lab3.dir/Node.cpp.o CMakeFiles/Lab3.dir/aew0056_3.cpp.o CMakeFiles/Lab3.dir/MazeMenu.cpp.o  -o Lab3 
+/Library/Developer/CommandLineTools/usr/bin/c++   -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Lab3.dir/Node.cpp.o CMakeFiles/Lab3.dir/UnitTests.cpp.o CMakeFiles/Lab3.dir/MazeMenu.cpp.o  -o Lab3 

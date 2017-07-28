@@ -1,0 +1,77 @@
+Sample output for Maze1.txt:
+aew0056@tux060:~/Lab3$ ./a.out 
+===========================================================
+|           Welcome to the Ladder and Chute Maze           |
+===========================================================
+
+Enter a filename with a maze: Maze1.txt
+
+You can give up at any time be entering 'q' instead of a direction.
+
+You are currently in Room A1 of the Ladder and Chute Maze, you can go East.  What is your choice? E
+
+You are currently in Room B1 of the Ladder and Chute Maze, you can go North.  What is your choice? N
+
+You are currently in Room B2 of the Ladder and Chute Maze, you can go East or South or West.  What is your choice? E
+
+You are currently in Room C2 of the Ladder and Chute Maze, you can go North or South or West.  What is your choice? N
+
+You are currently in Room C3 of the Ladder and Chute Maze, you can go East or South or West.  What is your choice? E
+
+You are currently in Room D3 of the Ladder and Chute Maze, you can go North or South or West.  What is your choice? N
+
+You are currently in Room D4 of the Ladder and Chute Maze, you can go North or East or South or West.  What is your choice? E
+
+You are currently in Room E4 of the Ladder and Chute Maze, you can go East or West.  What is your choice? E
+
+You are currently in Room F4 of the Ladder and Chute Maze, you can go East or South or West.  What is your choice? E
+
+You are currently in Room G4 of the Ladder and Chute Maze, you can go North or South or West.  What is your choice? N
+
+You are currently in Room G5 of the Ladder and Chute Maze, you can go East or South.  What is your choice? E
+
+You are currently in Room H5 of the Ladder and Chute Maze, you can go North or West.  What is your choice? N
+
+Congratulations! You have reached the finish point.
+You took 12 steps.
+The nodes you visited are: A1 B1 B2 C2 C3 D3 D4 E4 F4 G4 G5 H5 H6
+
+
+Sample output for Maze2.txt:
+aew0056@tux060:~/Lab3$ ./a.out 
+===========================================================
+|           Welcome to the Ladder and Chute Maze           |
+===========================================================
+
+Enter a filename with a maze: Maze2.txt
+
+You can give up at any time be entering 'q' instead of a direction.
+
+You are currently in Room A1 of the Ladder and Chute Maze, you can go North.  What is your choice? N
+
+You are currently in Room A2 of the Ladder and Chute Maze, and you have taken a
+ladder to Room B5, you can go East or South.  What is your choice? E
+
+You are currently in Room C5 of the Ladder and Chute Maze, you can go North or West.  What is your choice? N
+
+You are currently in Room C6 of the Ladder and Chute Maze, you can go East or South or West.  What is your choice? E
+
+You are currently in Room D6 of the Ladder and Chute Maze, you can go East or West.  What is your choice? E
+
+You are currently in Room E6 of the Ladder and Chute Maze, and you have taken a
+chute to Room G4, you can go East or South.  What is your choice? E
+
+You are currently in Room H4 of the Ladder and Chute Maze, you can go North or West.  What is your choice? N
+
+You are currently in Room H5 of the Ladder and Chute Maze, you can go South or West.  What is your choice? W
+
+You are currently in Room G5 of the Ladder and Chute Maze, you can go North or East or West.  What is your choice? N
+
+You are currently in Room G6 of the Ladder and Chute Maze, you can go East or South.  What is your choice? E
+
+Congratulations! You have reached the finish point.
+You took 10 steps.
+The nodes you visited are: A1 A2 B5 C5 C6 D6 E6 G4 H4 H5 G5 G6 H6
+
+Sample output for Maze3.txt
+

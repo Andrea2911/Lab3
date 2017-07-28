@@ -34,7 +34,13 @@ Node.h
 string
 -
 
-/Users/Andrea/CLionProjects/Lab3/aew0056_3.cpp
+/Users/Andrea/CLionProjects/Lab3/UnitTests.cpp
+Node.h
+/Users/Andrea/CLionProjects/Lab3/Node.h
 MazeMenu.h
 /Users/Andrea/CLionProjects/Lab3/MazeMenu.h
+iostream
+-
+cassert
+-
 

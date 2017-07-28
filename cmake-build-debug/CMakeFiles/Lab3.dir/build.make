@@ -81,28 +81,28 @@ CMakeFiles/Lab3.dir/Node.cpp.o.provides: CMakeFiles/Lab3.dir/Node.cpp.o.requires
 CMakeFiles/Lab3.dir/Node.cpp.o.provides.build: CMakeFiles/Lab3.dir/Node.cpp.o
 
 
-CMakeFiles/Lab3.dir/aew0056_3.cpp.o: CMakeFiles/Lab3.dir/flags.make
-CMakeFiles/Lab3.dir/aew0056_3.cpp.o: ../aew0056_3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrea/CLionProjects/Lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab3.dir/aew0056_3.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab3.dir/aew0056_3.cpp.o -c /Users/Andrea/CLionProjects/Lab3/aew0056_3.cpp
+CMakeFiles/Lab3.dir/UnitTests.cpp.o: CMakeFiles/Lab3.dir/flags.make
+CMakeFiles/Lab3.dir/UnitTests.cpp.o: ../UnitTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Andrea/CLionProjects/Lab3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab3.dir/UnitTests.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab3.dir/UnitTests.cpp.o -c /Users/Andrea/CLionProjects/Lab3/UnitTests.cpp
 
-CMakeFiles/Lab3.dir/aew0056_3.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab3.dir/aew0056_3.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrea/CLionProjects/Lab3/aew0056_3.cpp > CMakeFiles/Lab3.dir/aew0056_3.cpp.i
+CMakeFiles/Lab3.dir/UnitTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab3.dir/UnitTests.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/Andrea/CLionProjects/Lab3/UnitTests.cpp > CMakeFiles/Lab3.dir/UnitTests.cpp.i
 
-CMakeFiles/Lab3.dir/aew0056_3.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab3.dir/aew0056_3.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrea/CLionProjects/Lab3/aew0056_3.cpp -o CMakeFiles/Lab3.dir/aew0056_3.cpp.s
+CMakeFiles/Lab3.dir/UnitTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab3.dir/UnitTests.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/Andrea/CLionProjects/Lab3/UnitTests.cpp -o CMakeFiles/Lab3.dir/UnitTests.cpp.s
 
-CMakeFiles/Lab3.dir/aew0056_3.cpp.o.requires:
+CMakeFiles/Lab3.dir/UnitTests.cpp.o.requires:
 
-.PHONY : CMakeFiles/Lab3.dir/aew0056_3.cpp.o.requires
+.PHONY : CMakeFiles/Lab3.dir/UnitTests.cpp.o.requires
 
-CMakeFiles/Lab3.dir/aew0056_3.cpp.o.provides: CMakeFiles/Lab3.dir/aew0056_3.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/aew0056_3.cpp.o.provides.build
-.PHONY : CMakeFiles/Lab3.dir/aew0056_3.cpp.o.provides
+CMakeFiles/Lab3.dir/UnitTests.cpp.o.provides: CMakeFiles/Lab3.dir/UnitTests.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/UnitTests.cpp.o.provides.build
+.PHONY : CMakeFiles/Lab3.dir/UnitTests.cpp.o.provides
 
-CMakeFiles/Lab3.dir/aew0056_3.cpp.o.provides.build: CMakeFiles/Lab3.dir/aew0056_3.cpp.o
+CMakeFiles/Lab3.dir/UnitTests.cpp.o.provides.build: CMakeFiles/Lab3.dir/UnitTests.cpp.o
 
 
 CMakeFiles/Lab3.dir/MazeMenu.cpp.o: CMakeFiles/Lab3.dir/flags.make
@@ -132,14 +132,14 @@ CMakeFiles/Lab3.dir/MazeMenu.cpp.o.provides.build: CMakeFiles/Lab3.dir/MazeMenu.
 # Object files for target Lab3
 Lab3_OBJECTS = \
 "CMakeFiles/Lab3.dir/Node.cpp.o" \
-"CMakeFiles/Lab3.dir/aew0056_3.cpp.o" \
+"CMakeFiles/Lab3.dir/UnitTests.cpp.o" \
 "CMakeFiles/Lab3.dir/MazeMenu.cpp.o"
 
 # External object files for target Lab3
 Lab3_EXTERNAL_OBJECTS =
 
 Lab3: CMakeFiles/Lab3.dir/Node.cpp.o
-Lab3: CMakeFiles/Lab3.dir/aew0056_3.cpp.o
+Lab3: CMakeFiles/Lab3.dir/UnitTests.cpp.o
 Lab3: CMakeFiles/Lab3.dir/MazeMenu.cpp.o
 Lab3: CMakeFiles/Lab3.dir/build.make
 Lab3: CMakeFiles/Lab3.dir/link.txt
@@ -152,7 +152,7 @@ CMakeFiles/Lab3.dir/build: Lab3
 .PHONY : CMakeFiles/Lab3.dir/build
 
 CMakeFiles/Lab3.dir/requires: CMakeFiles/Lab3.dir/Node.cpp.o.requires
-CMakeFiles/Lab3.dir/requires: CMakeFiles/Lab3.dir/aew0056_3.cpp.o.requires
+CMakeFiles/Lab3.dir/requires: CMakeFiles/Lab3.dir/UnitTests.cpp.o.requires
 CMakeFiles/Lab3.dir/requires: CMakeFiles/Lab3.dir/MazeMenu.cpp.o.requires
 
 .PHONY : CMakeFiles/Lab3.dir/requires

@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/Andrea/CLionProjects/Lab3/MazeMenu.cpp" "/Users/Andrea/CLionProjects/Lab3/cmake-build-debug/CMakeFiles/Lab3.dir/MazeMenu.cpp.o"
   "/Users/Andrea/CLionProjects/Lab3/Node.cpp" "/Users/Andrea/CLionProjects/Lab3/cmake-build-debug/CMakeFiles/Lab3.dir/Node.cpp.o"
-  "/Users/Andrea/CLionProjects/Lab3/aew0056_3.cpp" "/Users/Andrea/CLionProjects/Lab3/cmake-build-debug/CMakeFiles/Lab3.dir/aew0056_3.cpp.o"
+  "/Users/Andrea/CLionProjects/Lab3/UnitTests.cpp" "/Users/Andrea/CLionProjects/Lab3/cmake-build-debug/CMakeFiles/Lab3.dir/UnitTests.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

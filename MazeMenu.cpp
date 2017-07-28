@@ -129,16 +129,16 @@ bool MazeMenu::traverseMaze() {
         cin >> choice;//read the user's choice
         cout << endl;
         //check which direction the user chose
-        if (choice == 'N' && currentNode->getAttachedNode(0) != NULL) {
+        if ((choice == 'N' || choice == 'n') && currentNode->getAttachedNode(0) != NULL) {
             currentNode = currentNode->getAttachedNode(0);
         }
-        else if (choice == 'E' && currentNode->getAttachedNode(1) != NULL) {
+        else if ((choice == 'E' || choice == 'e') && currentNode->getAttachedNode(1) != NULL) {
             currentNode = currentNode->getAttachedNode(1);
         }
-        else if (choice == 'S' && currentNode->getAttachedNode(2) != NULL) {
+        else if ((choice == 'S' || choice == 's') && currentNode->getAttachedNode(2) != NULL) {
             currentNode = currentNode->getAttachedNode(2);
         }
-        else if (choice == 'W' && currentNode->getAttachedNode(3) != NULL) {
+        else if ((choice == 'W' || choice == 'w') && currentNode->getAttachedNode(3) != NULL) {
             currentNode = currentNode->getAttachedNode(3);
         }
         //allows the user to quit

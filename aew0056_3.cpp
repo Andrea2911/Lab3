@@ -37,11 +37,11 @@ int main() {
     MazeMenu menu;
     menu.welcomeUser();
     bool success = menu.traverseMaze();
-    if (success) {
+    if (success) { //the user successfully traverses the maze
         menu.passMessage();
     }
     else {
-        menu.failMessage();
+        menu.failMessage(); //the user fails to successfully traverse the maze
     }
     return 0;
 }

@@ -248,3 +248,20 @@ ladder to Room B5, you can go East or South.  What is your choice? q
 Congratulations! You have FAILED to reach the finish point.
 You took 1 steps.
 The nodes you visited are: A1 A2 B5
+
+4)The user gives an invalid filename.  The user is prompted to give a different filename.
+
+aew0056@tux058:~/Lab3$ ./a.out 
+===========================================================
+|           Welcome to the Ladder and Chute Maze           |
+===========================================================
+
+Enter a filename with a maze: Maze.txt 
+
+That file does not exist! Try another file.
+Enter a filename with a maze: Maze1.txt
+
+Maze created.
+You can give up at any time be entering 'q' instead of a direction.
+
+You are currently in Room A1 of the Ladder and Chute Maze, you can go East.  What is your choice? 

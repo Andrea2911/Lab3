@@ -8,7 +8,7 @@ CMakeFiles/Lab3.dir/MazeMenu.cpp.o: ../Node.h
 CMakeFiles/Lab3.dir/Node.cpp.o: ../Node.cpp
 CMakeFiles/Lab3.dir/Node.cpp.o: ../Node.h
 
-CMakeFiles/Lab3.dir/UnitTests.cpp.o: ../MazeMenu.h
-CMakeFiles/Lab3.dir/UnitTests.cpp.o: ../Node.h
-CMakeFiles/Lab3.dir/UnitTests.cpp.o: ../UnitTests.cpp
+CMakeFiles/Lab3.dir/aew0056_3.cpp.o: ../MazeMenu.h
+CMakeFiles/Lab3.dir/aew0056_3.cpp.o: ../Node.h
+CMakeFiles/Lab3.dir/aew0056_3.cpp.o: ../aew0056_3.cpp
 

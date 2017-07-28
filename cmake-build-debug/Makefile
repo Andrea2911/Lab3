@@ -177,32 +177,32 @@ Node.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/Node.cpp.s
 .PHONY : Node.cpp.s
 
-UnitTests.o: UnitTests.cpp.o
+aew0056_3.o: aew0056_3.cpp.o
 
-.PHONY : UnitTests.o
+.PHONY : aew0056_3.o
 
 # target to build an object file
-UnitTests.cpp.o:
-	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/UnitTests.cpp.o
-.PHONY : UnitTests.cpp.o
+aew0056_3.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/aew0056_3.cpp.o
+.PHONY : aew0056_3.cpp.o
 
-UnitTests.i: UnitTests.cpp.i
+aew0056_3.i: aew0056_3.cpp.i
 
-.PHONY : UnitTests.i
+.PHONY : aew0056_3.i
 
 # target to preprocess a source file
-UnitTests.cpp.i:
-	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/UnitTests.cpp.i
-.PHONY : UnitTests.cpp.i
+aew0056_3.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/aew0056_3.cpp.i
+.PHONY : aew0056_3.cpp.i
 
-UnitTests.s: UnitTests.cpp.s
+aew0056_3.s: aew0056_3.cpp.s
 
-.PHONY : UnitTests.s
+.PHONY : aew0056_3.s
 
 # target to generate assembly for a file
-UnitTests.cpp.s:
-	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/UnitTests.cpp.s
-.PHONY : UnitTests.cpp.s
+aew0056_3.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab3.dir/build.make CMakeFiles/Lab3.dir/aew0056_3.cpp.s
+.PHONY : aew0056_3.cpp.s
 
 # Help Target
 help:
@@ -219,9 +219,9 @@ help:
 	@echo "... Node.o"
 	@echo "... Node.i"
 	@echo "... Node.s"
-	@echo "... UnitTests.o"
-	@echo "... UnitTests.i"
-	@echo "... UnitTests.s"
+	@echo "... aew0056_3.o"
+	@echo "... aew0056_3.i"
+	@echo "... aew0056_3.s"
 .PHONY : help
 
 
